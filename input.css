@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==== TRANSISI PINDAH PAGE ==== */
+ .transition-shape {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(150deg, #5923B8 0%, #7237DA 98.95%);
+      z-index: 9999;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    input[type="password"] {
+        padding-right: 2.5rem;
+    }
+
+    /* ==== SCROLL MODERN ==== */
+
+/* Gaya scroll bar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #606f7b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #505f6b;
+}
+
+/* ==== ASSIDE OPEN DESKTOP ==== */
+@media (min-width: 768px) {
+  .sidebar-menu {
+      transform: translateX(0);
+  }
+  .sidebar-overlay {
+      display: none;
+  }
+}
+/* ==== END ==== */
+
+/* ==== CUSTOM SEARCH INPUT ==== */
+.dataTables_filter input {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.sidebar-menu span.active {
+  color: #FFBF42; 
+}
